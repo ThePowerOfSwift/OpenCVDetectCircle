@@ -41,7 +41,7 @@
 		75C0CF1D1E7B922B0034A22D /* UseGuide2_750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C0CF0F1E7B922A0034A22D /* UseGuide2_750x1334.png */; };
 		75C0CF1E1E7B922B0034A22D /* UseGuide3_750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 75C0CF101E7B922A0034A22D /* UseGuide3_750x1334.png */; };
 		75C0CF1F1E7B922B0034A22D /* UseGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C0CF121E7B922B0034A22D /* UseGuideView.m */; };
-		75C0CF231E7B95C00034A22D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C0CF221E7B95C00034A22D /* opencv2.framework */; };
+		75C0CF271E7B978E0034A22D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C0CF261E7B978E0034A22D /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,7 +91,7 @@
 		75C0CF101E7B922A0034A22D /* UseGuide3_750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UseGuide3_750x1334.png; sourceTree = "<group>"; };
 		75C0CF111E7B922A0034A22D /* UseGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseGuideView.h; sourceTree = "<group>"; };
 		75C0CF121E7B922B0034A22D /* UseGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseGuideView.m; sourceTree = "<group>"; };
-		75C0CF221E7B95C00034A22D /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../opencv2.framework; sourceTree = "<group>"; };
+		75C0CF261E7B978E0034A22D /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				75A156071E6FFA6D00A0FFCE /* AssetsLibrary.framework in Frameworks */,
 				75A156051E6FFA6300A0FFCE /* AVFoundation.framework in Frameworks */,
 				75A156031E6FFA5900A0FFCE /* CoreGraphics.framework in Frameworks */,
-				75C0CF231E7B95C00034A22D /* opencv2.framework in Frameworks */,
+				75C0CF271E7B978E0034A22D /* opencv2.framework in Frameworks */,
 				75A156011E6FFA5000A0FFCE /* CoreMedia.framework in Frameworks */,
 				75A155FF1E6FFA4600A0FFCE /* CoreVideo.framework in Frameworks */,
 				75A155FD1E6FFA3E00A0FFCE /* Photos.framework in Frameworks */,
@@ -134,7 +134,7 @@
 		75A155DA1E6FEB5600A0FFCE /* OpenCVDetectCircleDemo */ = {
 			isa = PBXGroup;
 			children = (
-				75C0CF221E7B95C00034A22D /* opencv2.framework */,
+				75C0CF261E7B978E0034A22D /* opencv2.framework */,
 				75A155DE1E6FEB5600A0FFCE /* AppDelegate.h */,
 				75A155DF1E6FEB5600A0FFCE /* AppDelegate.m */,
 				75A156101E70FD4600A0FFCE /* DebugView.h */,
@@ -481,6 +481,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenCVDetectCircleDemo",
+					"$(PROJECT_DIR)",
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = OpenCVDetectCircleDemo/Info.plist;
@@ -502,6 +503,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenCVDetectCircleDemo",
+					"$(PROJECT_DIR)",
 				);
 				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = OpenCVDetectCircleDemo/Info.plist;
